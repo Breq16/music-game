@@ -1,0 +1,124 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="Project" target="8" version="2">
+  <project Name="Project">
+    <configuration
+      CMSIS_CORE="Yes"
+      Name="Common"
+      Placement="Flash"
+      Target="STM32L152RC"
+      arm_architecture="v7M"
+      arm_core_type="Cortex-M3"
+      arm_fp_abi="Soft"
+      arm_fpu_type="None"
+      arm_linker_heap_size="128"
+      arm_linker_jtag_pad_pre_dr="1"
+      arm_linker_jtag_pad_pre_ir="5"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="256"
+      arm_simulator_memory_simulation_filename="$(TargetsDir)/STM32/STM32SimulatorMemory$(HostDLL)"
+      arm_simulator_memory_simulation_parameter="STM32L152RC;0x40000;0x8000"
+      arm_target_loader_applicable_loaders="Flash"
+      arm_target_loader_default_loader="Flash"
+      arm_target_trace_interface_type="None"
+      c_preprocessor_definitions="USE_STDPERIPH_DRIVER;STM32L1XX_MD"
+      c_user_include_directories=";C:/IEN210/RealDeviceDriverLCD;./inc;./Drivers/Libaries/CMSIS/Device/ST/STM32L1xx/Include;./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/inc;./Drivers/Utilities/STM32L-DISCOVERY"
+      debug_register_definition_file="$(TargetsDir)/STM32/STM32L151_Peripherals.xml"
+      linker_memory_map_file="$(TargetsDir)/STM32/STM32L152RC_MemoryMap.xml"
+      linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml"
+      macros="DeviceVectorsFile=STM32L152xC.vec"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(TargetsDir)/STM32/propertyGroups.xml"
+      target_get_partname_script="GetPartName()"
+      target_match_partname_script="MatchPartName(&quot;$(Target)&quot;)"
+      target_script_file="$(TargetsDir)/STM32/STM32_Target.js"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <configuration
+      Name="Flash"
+      arm_target_flash_loader_file_path="$(LOADER:$(TargetsDir)/STM32/Release/STM32L_Loader_rpc.elf)"
+      arm_target_loader_can_erase_all="No"
+      arm_target_loader_can_lock_all="No"
+      arm_target_loader_can_lock_range="No"
+      arm_target_loader_can_unlock_all="No"
+      arm_target_loader_can_unlock_range="No"
+      target_reset_script="FLASHReset()" />
+    <configuration Name="RAM" target_reset_script="Reset()" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+      <file file_name="$(TargetsDir)/STM32/STM32_Startup.s" />
+      <file file_name="$(TargetsDir)/STM32/$(DeviceVectorsFile)" />
+    </folder>
+    <folder Name="CMSIS">
+      <file file_name="./src/system_stm32l1xx.c" />
+    </folder>
+    <folder Name="EWARM">
+      <file file_name="./Drivers/Libaries/CMSIS/Device/ST/STM32L1xx/Source/Templates/iar/startup_stm32l1xx_md.s">
+        <configuration Name="Common" build_exclude_from_build="Yes" />
+      </file>
+    </folder>
+    <folder Name="StdPeriph_Driver">
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/misc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_aes.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_aes_util.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_fsmc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_opamp.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_sdio.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c" />
+      <file file_name="./Drivers/Libaries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c" />
+    </folder>
+    <folder Name="STM32L_DISCOVERY">
+      <file file_name="./Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.c" />
+    </folder>
+    <folder Name="User">
+      <file file_name="./src/main.c" />
+      <file file_name="./src/stm32l1xx_it.c" />
+    </folder>
+  </project>
+  <configuration Name="THUMB Debug" inherited_configurations="THUMB;Debug" />
+  <configuration
+    Name="THUMB"
+    Platform="ARM"
+    arm_instruction_set="Thumb"
+    arm_library_instruction_set="Thumb"
+    c_preprocessor_definitions="__THUMB"
+    hidden="Yes" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="THUMB Release"
+    inherited_configurations="THUMB;Release" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+</solution>
