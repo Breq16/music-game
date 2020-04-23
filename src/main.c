@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 static volatile unsigned int TimingDelay;
 RCC_ClocksTypeDef RCC_Clocks;
@@ -10,43 +11,149 @@ void  Init_GPIOs (void);
 void  Init_Board(void);
 /*******************************************************************************/
 
-const uint32_t track[1] = { 0x01234567,
-                            0x89ABCDEF };
 
-uint32_t getTrackAt(uint32_t pos) {
-  uint8_t trackIndex = pos >> 5;
-  uint32_t leftSeg = track[trackIndex];
-  uint32_t rightSeg = track[trackIndex + 1];
-  uint8_t posWithinTrack = pos & 0b0001 1111;
+const int PERC_NONE = 0;
+const int PERC_KICK = 1 << 4;
+const int PERC_SNARE = 2 << 4;
 
-  uint32_t trackSection = (leftSeg << posWithinTrack) | (rightSeg >> (32 - posWithinTrack));
-  return trackSection;
+float busyWaitCyclesPerSecond = 0;
+
+int millisPerBeat = 0;
+
+void calibrateBusyWait() {
+  TimingDelay = 4096;
+  for (uint32_t i = 0; i < 1000000; ++i);
+  int millisPerMillionCycles = 4096 - TimingDelay;
+  busyWaitCyclesPerSecond = 1000000000.0F/millisPerMillionCycles;
+}
+
+void setBPM(float tempo) {
+  tempo = 1.0F / tempo;
+  tempo *= 60; // 60 sec per min
+  tempo *= 1000; // 1000 msec per sec
+  millisPerBeat = tempo;
+}
+
+void busyWait(uint32_t cycles) {
+  for (uint32_t i = 0; i < cycles; ++i);
+}
+
+void playWave(uint32_t timeOn, uint32_t timeOff) {
+  GPIO_SetBits(GPIOB, GPIO_Pin_7);
+  busyWait(timeOn);
+  GPIO_ResetBits(GPIOB, GPIO_Pin_7);
+  busyWait(timeOff);
+}
+
+uint32_t midiNoteToCycles(uint8_t noteInt) {
+  float note = (float)noteInt;
+  note = 69 - note; // Negative offset from A4
+  note /= 12; // 12 half-steps per octave
+  note = pow(2, note);
+  note *= busyWaitCyclesPerSecond; // (210,000 busy-wait-cycles per second)
+  note /= 440; // A4 = 440 Hz
+  return (uint32_t)note;
+}
+
+void playNote(uint8_t midiNote, uint8_t dutyCycle) {
+  uint32_t cycles = midiNoteToCycles(midiNote);
+  uint32_t cyclesOn = cycles >> dutyCycle;
+  uint32_t cyclesOff = cycles - cyclesOn;
+  while (TimingDelay != 0) {
+    playWave(cyclesOn, cyclesOff);
+  }
+}
+
+void playKick() {
+  int minCycles = busyWaitCyclesPerSecond / 400;
+  int maxCycles = minCycles * 4;
+  int stepCycles = (maxCycles - minCycles)/5;
+  for (int cycles = minCycles; cycles < maxCycles; cycles += stepCycles) {
+    playWave(cycles, cycles);
+  }
+}
+
+uint32_t randomSeed = 0xBADC0DE;
+
+void xorShift() {
+  randomSeed ^= randomSeed << 13;
+  randomSeed ^= randomSeed >> 17;
+  randomSeed ^= randomSeed << 5;
+}
+
+void playSnare() {
+  int initialMillis = TimingDelay;
+  while (initialMillis - TimingDelay < 50) {
+    xorShift();
+    for (int j = 0; j < 32; ++j) {
+      if (randomSeed & (1 << j)) {
+        GPIO_SetBits(GPIOB, GPIO_Pin_7);
+      } else {
+        GPIO_ResetBits(GPIOB, GPIO_Pin_7);
+      }
+    }
+  }
+}
+
+void playPackedBeat(uint16_t beat) {
+  uint8_t note = (beat & 0x7F00) >> 8;
+  uint8_t dutyCycle = (beat & 0x00C0) >> 6 + 1;
+  uint8_t beats = (beat & 0x000F) + 1;
+
+  // Set Beat Time
+  TimingDelay = millisPerBeat * beats;
+
+  // Play percussion
+  if (beat & PERC_KICK) {
+    playKick();
+  } else if (beat & PERC_SNARE) {
+    playSnare();
+  }
+
+  // Play note
+  if (note) {
+    playNote(note, dutyCycle);
+  } else {
+    while (TimingDelay != 0);
+  }
 }
 
 int main(void) {
   Init_Board();
 
-  LCD_GLASS_DisplayString("055555");
+  calibrateBusyWait();
+
+  setBPM(240);
 
   while(TRUE) {
-    GPIO_ResetBits(GPIOB, GPIO_Pin_6); // Turn on Blue
-    GPIO_SetBits(  GPIOB, GPIO_Pin_7); // Turn off Green
-    Delay(2000); 
+    playPackedBeat(55376);
+    playPackedBeat(22080);
+    playPackedBeat(20033);
+    playPackedBeat(20577);
 
-    GPIO_SetBits(  GPIOB, GPIO_Pin_6);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_7);
-    Delay(2000); 
+    playPackedBeat(54608);
+    playPackedBeat(21312);
+    playPackedBeat(19009);
+    playPackedBeat(19553);
+
+    playPackedBeat(54096);
+    playPackedBeat(20800);
+    playPackedBeat(18785);
+    playPackedBeat(19553);
+
+    playPackedBeat(20835);
+    playPackedBeat(65);
   }
 }
            
 void UserButtonDown(void)
 {
-  LCD_GLASS_DisplayString("1");
+  //LCD_GLASS_DisplayString("1");
 }
 
 void UserButtonUp(void)
 {
-  LCD_GLASS_DisplayString("0");
+  //LCD_GLASS_DisplayString("0");
 }
 
 void Delay(unsigned int nTime)

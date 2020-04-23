@@ -34,4 +34,5 @@ Project\ THUMB\ Debug/main.o: \
  Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.h \
  Drivers/Utilities/STM32L-DISCOVERY/discover_board.h \
  /usr/share/crossworks_for_arm_4.6/include/stdio.h \
- /usr/share/crossworks_for_arm_4.6/include/__crossworks.h
+ /usr/share/crossworks_for_arm_4.6/include/__crossworks.h \
+ /usr/share/crossworks_for_arm_4.6/include/math.h

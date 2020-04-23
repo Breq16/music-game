@@ -1,33 +1,31 @@
 Archive member included to satisfy reference by file (symbol)
 
+/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                              Project THUMB Debug/main.o (__aeabi_i2f)
+/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                              Project THUMB Debug/main.o (pow)
+/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
+                              /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o) (fabs)
+/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                              /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o) (__aeabi_errno_addr)
+/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
+                              /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o) (memcpy)
+/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc.o)
+                              /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o) (__heap_lock)
+/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+                              /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o) (__aeabi_uldivmod)
 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
                               Project THUMB Debug/thumb_crt0.o (debug_fopen)
 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
                               /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o) (__do_debug_operation)
 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
                               /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o) (__do_nvdebug_operation)
-/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o (__aeabi_i2d)
-/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o (frexp)
-/usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o) (fabs)
-/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o (__aeabi_uldivmod)
-/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o (__getc)
-/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o) (memcpy)
-/usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc.o)
-                              /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o) (__heap_lock)
 
 Discarded input sections
 
  .text          0x0000000000000000        0x0 Project THUMB Debug/thumb_crt0.o
  .data          0x0000000000000000        0x0 Project THUMB Debug/thumb_crt0.o
  .bss           0x0000000000000000        0x0 Project THUMB Debug/thumb_crt0.o
- .text.__aeabi_read_tp
-                0x0000000000000000        0x8 Project THUMB Debug/thumb_crt0.o
  .text.abort    0x0000000000000000        0x2 Project THUMB Debug/thumb_crt0.o
  .text.__assert
                 0x0000000000000000        0x2 Project THUMB Debug/thumb_crt0.o
@@ -3127,8 +3125,20 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 Project THUMB Debug/stm32l_discovery_lcd.o
  .bss.KeyPressed
                 0x0000000000000000        0x1 Project THUMB Debug/stm32l_discovery_lcd.o
+ .bss.t_bar     0x0000000000000000        0x2 Project THUMB Debug/stm32l_discovery_lcd.o
+ .rodata.CapLetterMap
+                0x0000000000000000       0x34 Project THUMB Debug/stm32l_discovery_lcd.o
+ .rodata.NumberMap
+                0x0000000000000000       0x14 Project THUMB Debug/stm32l_discovery_lcd.o
  .text.LCD_contrast
                 0x0000000000000000       0x50 Project THUMB Debug/stm32l_discovery_lcd.o
+ .text.LCD_bar  0x0000000000000000       0x48 Project THUMB Debug/stm32l_discovery_lcd.o
+ .text.LCD_Conv_Char_Seg
+                0x0000000000000000      0x1b4 Project THUMB Debug/stm32l_discovery_lcd.o
+ .text.LCD_GLASS_WriteChar
+                0x0000000000000000      0x564 Project THUMB Debug/stm32l_discovery_lcd.o
+ .text.LCD_GLASS_DisplayString
+                0x0000000000000000       0x5a Project THUMB Debug/stm32l_discovery_lcd.o
  .text.LCD_GLASS_DisplayStrDeci
                 0x0000000000000000       0xa0 Project THUMB Debug/stm32l_discovery_lcd.o
  .text.LCD_GLASS_ScrollSentence
@@ -3197,10 +3207,17 @@ Discarded input sections
  .group         0x0000000000000000        0xc Project THUMB Debug/main.o
  .group         0x0000000000000000        0xc Project THUMB Debug/main.o
  .group         0x0000000000000000        0xc Project THUMB Debug/main.o
+ .group         0x0000000000000000        0xc Project THUMB Debug/main.o
  .text          0x0000000000000000        0x0 Project THUMB Debug/main.o
  .data          0x0000000000000000        0x0 Project THUMB Debug/main.o
  .bss           0x0000000000000000        0x0 Project THUMB Debug/main.o
- .rodata.track  0x0000000000000000        0x4 Project THUMB Debug/main.o
+ .rodata.PERC_NONE
+                0x0000000000000000        0x4 Project THUMB Debug/main.o
+ .rodata.PERC_KICK
+                0x0000000000000000        0x4 Project THUMB Debug/main.o
+ .rodata.PERC_SNARE
+                0x0000000000000000        0x4 Project THUMB Debug/main.o
+ .text.Delay    0x0000000000000000       0x20 Project THUMB Debug/main.o
  .text.RCC_Configuration
                 0x0000000000000000       0x54 Project THUMB Debug/main.o
  .text.conf_analog_all_GPIOS
@@ -3310,275 +3327,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xa0 Project THUMB Debug/stm32l1xx_it.o
  .debug_macro   0x0000000000000000       0x89 Project THUMB Debug/stm32l1xx_it.o
  .debug_macro   0x0000000000000000       0x78 Project THUMB Debug/stm32l1xx_it.o
- .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio
-                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_abort
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fopen
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fgets
-                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fputc
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fputs
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fread
-                0x0000000000000000       0x2c /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fwrite
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fseek
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_ftell
-                0x0000000000000000       0x1e /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_gets
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fflush
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fclose
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fgetc
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getchar
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_putchar
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_puts
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_rewind
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_clearerr
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_feof
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_ferror
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getch
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_time
-                0x0000000000000000       0x22 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_vprintf
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_vfprintf
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_ungetc
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fgetpos
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_fsetpos
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_freopen
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_perror
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_remove
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_rename
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_tmpfile
-                0x0000000000000000       0x12 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_tmpnam
-                0x0000000000000000       0x28 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getenv
-                0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_system
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_vfscanf
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_vscanf
-                0x0000000000000000       0x1a /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_exit
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_enabled
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_kbhit
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_ioctl
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_runtime_error
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_break
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getargs
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_geti
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getu
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getl
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getul
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getf
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getd
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getll
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_getull
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_filesize
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_accept
-                0x0000000000000000       0x30 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_bind
-                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_listen
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_shutdown
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_socket
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_htons
-                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_htonl
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_loadsymbols
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_unloadsymbols
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.__debug_io_lock
-                0x0000000000000000        0x2 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.__debug_io_unlock
-                0x0000000000000000        0x2 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .bss.libdebugio.__dbgEnabled
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .bss.libdebugio.getenv_buffer
-                0x0000000000000000      0x400 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .bss.libdebugio.tmpnam_buffer
-                0x0000000000000000      0x100 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .rodata.libc.__vfprintf_int.str1.4
-                0x0000000000000000        0x7 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_int
-                0x0000000000000000      0x648 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_int_nwp
-                0x0000000000000000      0x4fc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long
-                0x0000000000000000      0x664 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_nwp
-                0x0000000000000000      0x5c8 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_long
-                0x0000000000000000      0x738 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_long_nwp
-                0x0000000000000000      0x6ac /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .rodata.libc.__vfprintf_float_long.str1.4
-                0x0000000000000000       0x28 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_float_long
-                0x0000000000000000     0x10ec /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_float_long_long
-                0x0000000000000000     0x10ec /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_short_float_long
-                0x0000000000000000      0xde4 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_short_float_long_long
-                0x0000000000000000      0xf30 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__RAL_compute_wide_metrics
-                0x0000000000000000       0x34 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__RAL_print_wide_string
-                0x0000000000000000       0x4c /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_int_wchar
-                0x0000000000000000      0x6fc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_int_nwp_wchar
-                0x0000000000000000      0x538 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_wchar
-                0x0000000000000000      0x708 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_nwp_wchar
-                0x0000000000000000      0x5f4 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_long_wchar
-                0x0000000000000000      0x7cc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_long_long_nwp_wchar
-                0x0000000000000000      0x6dc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_float_long_wchar
-                0x0000000000000000     0x1158 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text.libc.__vfprintf_float_long_long_wchar
-                0x0000000000000000     0x1158 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .rodata.libc.ipow10
-                0x0000000000000000       0xa0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
- .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__ungetc
-                0x0000000000000000       0x1e /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_string
-                0x0000000000000000       0xb0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_string_map
-                0x0000000000000000       0x9a /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_int
-                0x0000000000000000      0x164 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_int_long
-                0x0000000000000000      0x164 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_int_long_long
-                0x0000000000000000      0x190 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.rd_real
-                0x0000000000000000      0x26c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_int
-                0x0000000000000000      0x42c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_int_cc
-                0x0000000000000000      0x42c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_long
-                0x0000000000000000      0x438 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_long_cc
-                0x0000000000000000      0x438 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_long_long
-                0x0000000000000000      0x45c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_long_long_cc
-                0x0000000000000000      0x45c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_float_long
-                0x0000000000000000      0x444 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_float_long_cc
-                0x0000000000000000      0x444 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_float_long_long
-                0x0000000000000000      0x468 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text.libc.__vfscanf_float_long_long_cc
-                0x0000000000000000      0x468 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
- .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .text.libdebugio
-                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .text.libdebugio.__do_debug_operation
-                0x0000000000000000       0x30 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .bss.libdebugio.dbgCntrlWord_mempoll
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .bss.libdebugio.dbgCommWord
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .text.libdebugio
-                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .text.libdebugio.__do_nvdebug_operation
-                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
  .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .data.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .bss.libc      0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__int32_to_float32
-                0x0000000000000000       0x2e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__int32_to_float64
-                0x0000000000000000       0x2e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__uint32_to_float32
-                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__uint32_to_float64
                 0x0000000000000000       0x22 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__int64_to_float32
@@ -3589,32 +3340,16 @@ Discarded input sections
                 0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__uint64_to_float64
                 0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_to_int32
-                0x0000000000000000       0x3e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_to_int64
                 0x0000000000000000       0x7a /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_to_uint32
-                0x0000000000000000       0x24 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_to_uint64
                 0x0000000000000000       0x46 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_to_int32
-                0x0000000000000000       0x4e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_to_int64
                 0x0000000000000000       0x80 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_to_uint32
                 0x0000000000000000       0x2c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_to_uint64
                 0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_to_float64
-                0x0000000000000000       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_to_float32
-                0x0000000000000000       0x6e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_add
-                0x0000000000000000      0x136 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_mul
-                0x0000000000000000       0xd2 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float32_div
-                0x0000000000000000      0x1e0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_cmp
                 0x0000000000000000       0x42 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__aeabi_cfcmpeq
@@ -3635,12 +3370,6 @@ Discarded input sections
                 0x0000000000000000       0x32 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_cmpun
                 0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_add
-                0x0000000000000000      0x294 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_mul
-                0x0000000000000000      0x16c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_div
-                0x0000000000000000      0x214 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_cmp
                 0x0000000000000000       0x64 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_cdcmpeq
@@ -3649,16 +3378,6 @@ Discarded input sections
                 0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_cdrcmple
                 0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_cmpeq
-                0x0000000000000000       0x32 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_cmple
-                0x0000000000000000       0x3c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_cmpge
-                0x0000000000000000       0x3c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_cmplt
-                0x0000000000000000       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_cmpgt
-                0x0000000000000000       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_cmpun
                 0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_signbit
@@ -3670,8 +3389,6 @@ Discarded input sections
  .text.libc.__float64_isinf
                 0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_isnan
-                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .text.libc.__float64_isnan
                 0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float32_isfinite
                 0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
@@ -3685,8 +3402,6 @@ Discarded input sections
                 0x0000000000000000       0x22 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text.libc.__float64_classify
                 0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
- .ARM.attributes
-                0x0000000000000000       0x1b /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
  .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
@@ -3733,16 +3448,8 @@ Discarded input sections
                 0x0000000000000000       0x1c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.fminf
                 0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .text.libc.frexp
-                0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .text.libc.ldexp
-                0x0000000000000000       0x68 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .text.libc.exp
-                0x0000000000000000      0x1e8 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.cosh
                 0x0000000000000000       0xf4 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .text.libc.log
-                0x0000000000000000      0x228 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.atanh
                 0x0000000000000000      0x14c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.log10
@@ -3757,8 +3464,6 @@ Discarded input sections
                 0x0000000000000000       0xa8 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.modff
                 0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .text.libc.pow
-                0x0000000000000000      0x11c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.exp2
                 0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc.powf
@@ -3835,14 +3540,9 @@ Discarded input sections
                 0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .rodata.libc.expf_twojby8
                 0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
  .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
  .data.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
  .bss.libc      0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
- .text.libc.fabs
-                0x0000000000000000        0x6 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
  .text.libc.fabsf
                 0x0000000000000000        0x6 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
  .text.libc.ceilf
@@ -3853,65 +3553,6 @@ Discarded input sections
                 0x0000000000000000       0x36 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
  .text.libc.frexpf
                 0x0000000000000000       0x2a /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
- .ARM.attributes
-                0x0000000000000000       0x1b /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
- .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .data.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .bss.libc      0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_umod
-                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_asr
-                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_div
-                0x0000000000000000       0x44 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_lsl
-                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_lsr
-                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_mod
-                0x0000000000000000       0x46 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_udivmod
-                0x0000000000000000       0xce /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__aeabi_ldivmod
-                0x0000000000000000       0x58 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_cmp
-                0x0000000000000000       0x1a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int64_ucmp
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.muldi3
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int32_umod
-                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int32_div
-                0x0000000000000000      0x216 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .rodata.libc.__aeabi_idiv
-                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__uint32_div
-                0x0000000000000000       0xf6 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .rodata.libc.__aeabi_uidiv
-                0x0000000000000000       0x46 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__int32_mod
-                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__aeabi_uidivmod
-                0x0000000000000000       0x2a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__aeabi_idivmod
-                0x0000000000000000       0x4a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.ctl_count_leading_zeros_32
-                0x0000000000000000       0x34 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.ctl_count_leading_zeros_16
-                0x0000000000000000       0x32 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__gnu_thumb1_case_shi
-                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__gnu_thumb1_case_si
-                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__gnu_thumb1_case_sqi
-                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__gnu_thumb1_case_uhi
-                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .text.libc.__gnu_thumb1_case_uqi
-                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
- .ARM.attributes
-                0x0000000000000000       0x1b /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
  .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
@@ -4080,8 +3721,6 @@ Discarded input sections
                 0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.div
                 0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .text.libc.__aeabi_errno_addr
-                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.buddy_free
                 0x0000000000000000       0xd4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__strtoul
@@ -5240,11 +4879,7 @@ Discarded input sections
                 0x0000000000000000       0x4a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .rodata.libc.__RAL_year_lengths
                 0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .rodata.libc.__aeabi_EDOM
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .rodata.libc.__aeabi_EILSEQ
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .rodata.libc.__aeabi_ERANGE
                 0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .rodata.libc.power
                 0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
@@ -5268,11 +4903,6 @@ Discarded input sections
                 0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .tbss.__RAL_wctomb_mbstate
                 0x0000000000000000        0x8 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .tbss.errno_val
-                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
  .data.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
  .bss.libc      0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
@@ -5551,6 +5181,323 @@ Discarded input sections
  .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc.o)
  .ARM.attributes
                 0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc.o)
+ .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .data.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .bss.libc      0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_umod
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_asr
+                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_div
+                0x0000000000000000       0x44 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_lsl
+                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_lsr
+                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_mod
+                0x0000000000000000       0x46 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_udivmod
+                0x0000000000000000       0xce /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__aeabi_ldivmod
+                0x0000000000000000       0x58 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_cmp
+                0x0000000000000000       0x1a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int64_ucmp
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.muldi3
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int32_umod
+                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int32_div
+                0x0000000000000000      0x216 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .rodata.libc.__aeabi_idiv
+                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__uint32_div
+                0x0000000000000000       0xf6 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .rodata.libc.__aeabi_uidiv
+                0x0000000000000000       0x46 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__int32_mod
+                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__aeabi_uidivmod
+                0x0000000000000000       0x2a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__aeabi_idivmod
+                0x0000000000000000       0x4a /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.ctl_count_leading_zeros_32
+                0x0000000000000000       0x34 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.ctl_count_leading_zeros_16
+                0x0000000000000000       0x32 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__gnu_thumb1_case_shi
+                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__gnu_thumb1_case_si
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__gnu_thumb1_case_sqi
+                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__gnu_thumb1_case_uhi
+                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text.libc.__gnu_thumb1_case_uqi
+                0x0000000000000000       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .ARM.attributes
+                0x0000000000000000       0x1b /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+ .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio
+                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_abort
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fopen
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fgets
+                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fputc
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fputs
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fread
+                0x0000000000000000       0x2c /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fwrite
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fseek
+                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_ftell
+                0x0000000000000000       0x1e /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_gets
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fflush
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fclose
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fgetc
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getchar
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_putchar
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_puts
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_rewind
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_clearerr
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_feof
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_ferror
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getch
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_time
+                0x0000000000000000       0x22 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_vprintf
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_vfprintf
+                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_ungetc
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fgetpos
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_fsetpos
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_freopen
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_perror
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_remove
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_rename
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_tmpfile
+                0x0000000000000000       0x12 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_tmpnam
+                0x0000000000000000       0x28 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getenv
+                0x0000000000000000       0x20 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_system
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_vfscanf
+                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_vscanf
+                0x0000000000000000       0x1a /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_exit
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_enabled
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_kbhit
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_ioctl
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_runtime_error
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_break
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getargs
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_geti
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getu
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getl
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getul
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getf
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getd
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getll
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_getull
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_filesize
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_accept
+                0x0000000000000000       0x30 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_bind
+                0x0000000000000000       0x26 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_listen
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_shutdown
+                0x0000000000000000        0xe /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_socket
+                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_htons
+                0x0000000000000000        0xa /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_htonl
+                0x0000000000000000       0x18 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_loadsymbols
+                0x0000000000000000       0x10 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.debug_unloadsymbols
+                0x0000000000000000        0xc /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.__debug_io_lock
+                0x0000000000000000        0x2 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text.libdebugio.__debug_io_unlock
+                0x0000000000000000        0x2 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .bss.libdebugio.__dbgEnabled
+                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .bss.libdebugio.getenv_buffer
+                0x0000000000000000      0x400 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .bss.libdebugio.tmpnam_buffer
+                0x0000000000000000      0x100 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+ .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .rodata.libc.__vfprintf_int.str1.4
+                0x0000000000000000        0x7 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_int
+                0x0000000000000000      0x648 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_int_nwp
+                0x0000000000000000      0x4fc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long
+                0x0000000000000000      0x664 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_nwp
+                0x0000000000000000      0x5c8 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_long
+                0x0000000000000000      0x738 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_long_nwp
+                0x0000000000000000      0x6ac /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .rodata.libc.__vfprintf_float_long.str1.4
+                0x0000000000000000       0x28 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_float_long
+                0x0000000000000000     0x10ec /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_float_long_long
+                0x0000000000000000     0x10ec /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_short_float_long
+                0x0000000000000000      0xde4 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_short_float_long_long
+                0x0000000000000000      0xf30 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__RAL_compute_wide_metrics
+                0x0000000000000000       0x34 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__RAL_print_wide_string
+                0x0000000000000000       0x4c /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_int_wchar
+                0x0000000000000000      0x6fc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_int_nwp_wchar
+                0x0000000000000000      0x538 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_wchar
+                0x0000000000000000      0x708 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_nwp_wchar
+                0x0000000000000000      0x5f4 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_long_wchar
+                0x0000000000000000      0x7cc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_long_long_nwp_wchar
+                0x0000000000000000      0x6dc /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_float_long_wchar
+                0x0000000000000000     0x1158 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text.libc.__vfprintf_float_long_long_wchar
+                0x0000000000000000     0x1158 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .rodata.libc.ipow10
+                0x0000000000000000       0xa0 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libvfprintf_v7m_t_le_eabi.o
+ .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc     0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__ungetc
+                0x0000000000000000       0x1e /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_string
+                0x0000000000000000       0xb0 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_string_map
+                0x0000000000000000       0x9a /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_int
+                0x0000000000000000      0x164 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_int_long
+                0x0000000000000000      0x164 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_int_long_long
+                0x0000000000000000      0x190 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.rd_real
+                0x0000000000000000      0x26c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_int
+                0x0000000000000000      0x42c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_int_cc
+                0x0000000000000000      0x42c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_long
+                0x0000000000000000      0x438 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_long_cc
+                0x0000000000000000      0x438 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_long_long
+                0x0000000000000000      0x45c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_long_long_cc
+                0x0000000000000000      0x45c /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_float_long
+                0x0000000000000000      0x444 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_float_long_cc
+                0x0000000000000000      0x444 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_float_long_long
+                0x0000000000000000      0x468 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text.libc.__vfscanf_float_long_long_cc
+                0x0000000000000000      0x468 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libvfscanf_v7m_t_le_eabi.o
+ .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .text.libdebugio
+                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .text.libdebugio.__do_debug_operation
+                0x0000000000000000       0x30 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .bss.libdebugio.dbgCntrlWord_mempoll
+                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .bss.libdebugio.dbgCommWord
+                0x0000000000000000        0x4 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+ .text          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .data          0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .bss           0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .text.libdebugio
+                0x0000000000000000        0x0 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .text.libdebugio.__do_nvdebug_operation
+                0x0000000000000000       0x16 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .comment       0x0000000000000000       0x48 /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d /usr/share/crossworks_for_arm_4.6/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
 
 Memory Configuration
 
@@ -5712,203 +5659,348 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000008000318                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000008000318     0x1920
+.text           0x0000000008000318     0x27e8
                 0x0000000008000318                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000008000318        0x0 linker stubs
  .glue_7t       0x0000000008000318        0x0 linker stubs
+ .text.__aeabi_read_tp
+                0x0000000008000318        0x8 Project THUMB Debug/thumb_crt0.o
+                0x0000000008000318                __aeabi_read_tp
  .text.SystemInit
-                0x0000000008000318       0x64 Project THUMB Debug/system_stm32l1xx.o
-                0x0000000008000318                SystemInit
+                0x0000000008000320       0x64 Project THUMB Debug/system_stm32l1xx.o
+                0x0000000008000320                SystemInit
  .text.SetSysClock
-                0x000000000800037c       0xe0 Project THUMB Debug/system_stm32l1xx.o
+                0x0000000008000384       0xe0 Project THUMB Debug/system_stm32l1xx.o
  .text.NVIC_Init
-                0x000000000800045c       0xdc Project THUMB Debug/misc.o
-                0x000000000800045c                NVIC_Init
+                0x0000000008000464       0xdc Project THUMB Debug/misc.o
+                0x0000000008000464                NVIC_Init
  .text.DMA_ClearFlag
-                0x0000000008000538       0x2c Project THUMB Debug/stm32l1xx_dma.o
-                0x0000000008000538                DMA_ClearFlag
+                0x0000000008000540       0x2c Project THUMB Debug/stm32l1xx_dma.o
+                0x0000000008000540                DMA_ClearFlag
  .text.EXTI_Init
-                0x0000000008000564       0xdc Project THUMB Debug/stm32l1xx_exti.o
-                0x0000000008000564                EXTI_Init
+                0x000000000800056c       0xdc Project THUMB Debug/stm32l1xx_exti.o
+                0x000000000800056c                EXTI_Init
  .text.EXTI_ClearITPendingBit
-                0x0000000008000640       0x14 Project THUMB Debug/stm32l1xx_exti.o
-                0x0000000008000640                EXTI_ClearITPendingBit
+                0x0000000008000648       0x14 Project THUMB Debug/stm32l1xx_exti.o
+                0x0000000008000648                EXTI_ClearITPendingBit
  .text.GPIO_Init
-                0x0000000008000654      0x122 Project THUMB Debug/stm32l1xx_gpio.o
-                0x0000000008000654                GPIO_Init
+                0x000000000800065c      0x122 Project THUMB Debug/stm32l1xx_gpio.o
+                0x000000000800065c                GPIO_Init
  .text.GPIO_StructInit
-                0x0000000008000776       0x2a Project THUMB Debug/stm32l1xx_gpio.o
-                0x0000000008000776                GPIO_StructInit
+                0x000000000800077e       0x2a Project THUMB Debug/stm32l1xx_gpio.o
+                0x000000000800077e                GPIO_StructInit
  .text.GPIO_ReadInputDataBit
-                0x00000000080007a0       0x3a Project THUMB Debug/stm32l1xx_gpio.o
-                0x00000000080007a0                GPIO_ReadInputDataBit
+                0x00000000080007a8       0x3a Project THUMB Debug/stm32l1xx_gpio.o
+                0x00000000080007a8                GPIO_ReadInputDataBit
  .text.GPIO_SetBits
-                0x00000000080007da       0x18 Project THUMB Debug/stm32l1xx_gpio.o
-                0x00000000080007da                GPIO_SetBits
+                0x00000000080007e2       0x18 Project THUMB Debug/stm32l1xx_gpio.o
+                0x00000000080007e2                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x00000000080007f2       0x18 Project THUMB Debug/stm32l1xx_gpio.o
-                0x00000000080007f2                GPIO_ResetBits
+                0x00000000080007fa       0x18 Project THUMB Debug/stm32l1xx_gpio.o
+                0x00000000080007fa                GPIO_ResetBits
  .text.GPIO_PinAFConfig
-                0x000000000800080a       0x9a Project THUMB Debug/stm32l1xx_gpio.o
-                0x000000000800080a                GPIO_PinAFConfig
+                0x0000000008000812       0x9a Project THUMB Debug/stm32l1xx_gpio.o
+                0x0000000008000812                GPIO_PinAFConfig
  .text.LCD_Init
-                0x00000000080008a4       0x5c Project THUMB Debug/stm32l1xx_lcd.o
-                0x00000000080008a4                LCD_Init
- .text.LCD_Cmd  0x0000000008000900       0x1c Project THUMB Debug/stm32l1xx_lcd.o
-                0x0000000008000900                LCD_Cmd
+                0x00000000080008ac       0x5c Project THUMB Debug/stm32l1xx_lcd.o
+                0x00000000080008ac                LCD_Init
+ .text.LCD_Cmd  0x0000000008000908       0x1c Project THUMB Debug/stm32l1xx_lcd.o
+                0x0000000008000908                LCD_Cmd
  .text.LCD_WaitForSynchro
-                0x000000000800091c       0x18 Project THUMB Debug/stm32l1xx_lcd.o
-                0x000000000800091c                LCD_WaitForSynchro
+                0x0000000008000924       0x18 Project THUMB Debug/stm32l1xx_lcd.o
+                0x0000000008000924                LCD_WaitForSynchro
  .text.LCD_MuxSegmentCmd
-                0x0000000008000934       0x1c Project THUMB Debug/stm32l1xx_lcd.o
-                0x0000000008000934                LCD_MuxSegmentCmd
+                0x000000000800093c       0x1c Project THUMB Debug/stm32l1xx_lcd.o
+                0x000000000800093c                LCD_MuxSegmentCmd
  .text.LCD_PulseOnDurationConfig
-                0x0000000008000950       0x28 Project THUMB Debug/stm32l1xx_lcd.o
-                0x0000000008000950                LCD_PulseOnDurationConfig
+                0x0000000008000958       0x28 Project THUMB Debug/stm32l1xx_lcd.o
+                0x0000000008000958                LCD_PulseOnDurationConfig
  .text.LCD_DeadTimeConfig
-                0x0000000008000978       0x28 Project THUMB Debug/stm32l1xx_lcd.o
-                0x0000000008000978                LCD_DeadTimeConfig
+                0x0000000008000980       0x28 Project THUMB Debug/stm32l1xx_lcd.o
+                0x0000000008000980                LCD_DeadTimeConfig
  .text.LCD_BlinkConfig
-                0x00000000080009a0       0x2c Project THUMB Debug/stm32l1xx_lcd.o
-                0x00000000080009a0                LCD_BlinkConfig
+                0x00000000080009a8       0x2c Project THUMB Debug/stm32l1xx_lcd.o
+                0x00000000080009a8                LCD_BlinkConfig
  .text.LCD_ContrastConfig
-                0x00000000080009cc       0x28 Project THUMB Debug/stm32l1xx_lcd.o
-                0x00000000080009cc                LCD_ContrastConfig
+                0x00000000080009d4       0x28 Project THUMB Debug/stm32l1xx_lcd.o
+                0x00000000080009d4                LCD_ContrastConfig
  .text.LCD_UpdateDisplayRequest
-                0x00000000080009f4       0x10 Project THUMB Debug/stm32l1xx_lcd.o
-                0x00000000080009f4                LCD_UpdateDisplayRequest
+                0x00000000080009fc       0x10 Project THUMB Debug/stm32l1xx_lcd.o
+                0x00000000080009fc                LCD_UpdateDisplayRequest
  .text.LCD_GetFlagStatus
-                0x0000000008000a04       0x34 Project THUMB Debug/stm32l1xx_lcd.o
-                0x0000000008000a04                LCD_GetFlagStatus
+                0x0000000008000a0c       0x34 Project THUMB Debug/stm32l1xx_lcd.o
+                0x0000000008000a0c                LCD_GetFlagStatus
  .text.PWR_RTCAccessCmd
-                0x0000000008000a38       0x1c Project THUMB Debug/stm32l1xx_pwr.o
-                0x0000000008000a38                PWR_RTCAccessCmd
+                0x0000000008000a40       0x1c Project THUMB Debug/stm32l1xx_pwr.o
+                0x0000000008000a40                PWR_RTCAccessCmd
  .text.PWR_VoltageScalingConfig
-                0x0000000008000a54       0x34 Project THUMB Debug/stm32l1xx_pwr.o
-                0x0000000008000a54                PWR_VoltageScalingConfig
+                0x0000000008000a5c       0x34 Project THUMB Debug/stm32l1xx_pwr.o
+                0x0000000008000a5c                PWR_VoltageScalingConfig
  .text.PWR_GetFlagStatus
-                0x0000000008000a88       0x34 Project THUMB Debug/stm32l1xx_pwr.o
-                0x0000000008000a88                PWR_GetFlagStatus
+                0x0000000008000a90       0x34 Project THUMB Debug/stm32l1xx_pwr.o
+                0x0000000008000a90                PWR_GetFlagStatus
  .text.RCC_LSEConfig
-                0x0000000008000abc       0x20 Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000abc                RCC_LSEConfig
+                0x0000000008000ac4       0x20 Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000ac4                RCC_LSEConfig
  .text.RCC_GetClocksFreq
-                0x0000000008000adc      0x1ac Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000adc                RCC_GetClocksFreq
+                0x0000000008000ae4      0x1ac Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000ae4                RCC_GetClocksFreq
  .text.RCC_RTCCLKConfig
-                0x0000000008000c88       0x5c Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000c88                RCC_RTCCLKConfig
+                0x0000000008000c90       0x5c Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000c90                RCC_RTCCLKConfig
  .text.RCC_RTCCLKCmd
-                0x0000000008000ce4       0x1c Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000ce4                RCC_RTCCLKCmd
+                0x0000000008000cec       0x1c Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000cec                RCC_RTCCLKCmd
  .text.RCC_RTCResetCmd
-                0x0000000008000d00       0x1c Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000d00                RCC_RTCResetCmd
+                0x0000000008000d08       0x1c Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000d08                RCC_RTCResetCmd
  .text.RCC_AHBPeriphClockCmd
-                0x0000000008000d1c       0x38 Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000d1c                RCC_AHBPeriphClockCmd
+                0x0000000008000d24       0x38 Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000d24                RCC_AHBPeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x0000000008000d54       0x38 Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000d54                RCC_APB1PeriphClockCmd
+                0x0000000008000d5c       0x38 Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000d5c                RCC_APB1PeriphClockCmd
  .text.RCC_GetFlagStatus
-                0x0000000008000d8c       0x68 Project THUMB Debug/stm32l1xx_rcc.o
-                0x0000000008000d8c                RCC_GetFlagStatus
+                0x0000000008000d94       0x68 Project THUMB Debug/stm32l1xx_rcc.o
+                0x0000000008000d94                RCC_GetFlagStatus
  .text.RTC_GetITStatus
-                0x0000000008000df4       0x70 Project THUMB Debug/stm32l1xx_rtc.o
-                0x0000000008000df4                RTC_GetITStatus
+                0x0000000008000dfc       0x70 Project THUMB Debug/stm32l1xx_rtc.o
+                0x0000000008000dfc                RTC_GetITStatus
  .text.RTC_ClearITPendingBit
-                0x0000000008000e64       0x30 Project THUMB Debug/stm32l1xx_rtc.o
-                0x0000000008000e64                RTC_ClearITPendingBit
+                0x0000000008000e6c       0x30 Project THUMB Debug/stm32l1xx_rtc.o
+                0x0000000008000e6c                RTC_ClearITPendingBit
  .text.SYSCFG_EXTILineConfig
-                0x0000000008000e94       0x8c Project THUMB Debug/stm32l1xx_syscfg.o
-                0x0000000008000e94                SYSCFG_EXTILineConfig
+                0x0000000008000e9c       0x8c Project THUMB Debug/stm32l1xx_syscfg.o
+                0x0000000008000e9c                SYSCFG_EXTILineConfig
  .text.LCD_GLASS_Init
-                0x0000000008000f20       0x78 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008000f20                LCD_GLASS_Init
+                0x0000000008000f28       0x78 Project THUMB Debug/stm32l_discovery_lcd.o
+                0x0000000008000f28                LCD_GLASS_Init
  .text.LCD_GLASS_Configure_GPIO
-                0x0000000008000f98      0x18c Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008000f98                LCD_GLASS_Configure_GPIO
- .text.LCD_bar  0x0000000008001124       0x48 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008001124                LCD_bar
- .text.LCD_Conv_Char_Seg
-                0x000000000800116c      0x1b4 Project THUMB Debug/stm32l_discovery_lcd.o
- .text.LCD_GLASS_WriteChar
-                0x0000000008001320      0x564 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008001320                LCD_GLASS_WriteChar
- .text.LCD_GLASS_DisplayString
-                0x0000000008001884       0x5a Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008001884                LCD_GLASS_DisplayString
- *fill*         0x00000000080018de        0x2 
+                0x0000000008000fa0      0x18c Project THUMB Debug/stm32l_discovery_lcd.o
+                0x0000000008000fa0                LCD_GLASS_Configure_GPIO
  .text.LCD_GLASS_Clear
-                0x00000000080018e0       0x54 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x00000000080018e0                LCD_GLASS_Clear
+                0x000000000800112c       0x54 Project THUMB Debug/stm32l_discovery_lcd.o
+                0x000000000800112c                LCD_GLASS_Clear
  .text.__NVIC_SetPriority
-                0x0000000008001934       0x50 Project THUMB Debug/main.o
+                0x0000000008001180       0x50 Project THUMB Debug/main.o
  .text.SysTick_Config
-                0x0000000008001984       0x40 Project THUMB Debug/main.o
- .text.main     0x00000000080019c4       0x48 Project THUMB Debug/main.o
-                0x00000000080019c4                main
+                0x00000000080011d0       0x40 Project THUMB Debug/main.o
+ .text.calibrateBusyWait
+                0x0000000008001210       0x5c Project THUMB Debug/main.o
+                0x0000000008001210                calibrateBusyWait
+ .text.setBPM   0x000000000800126c       0x4c Project THUMB Debug/main.o
+                0x000000000800126c                setBPM
+ .text.busyWait
+                0x00000000080012b8       0x20 Project THUMB Debug/main.o
+                0x00000000080012b8                busyWait
+ .text.playWave
+                0x00000000080012d8       0x30 Project THUMB Debug/main.o
+                0x00000000080012d8                playWave
+ .text.midiNoteToCycles
+                0x0000000008001308       0x94 Project THUMB Debug/main.o
+                0x0000000008001308                midiNoteToCycles
+ .text.playNote
+                0x000000000800139c       0x54 Project THUMB Debug/main.o
+                0x000000000800139c                playNote
+ .text.playKick
+                0x00000000080013f0       0x70 Project THUMB Debug/main.o
+                0x00000000080013f0                playKick
+ .text.xorShift
+                0x0000000008001460       0x38 Project THUMB Debug/main.o
+                0x0000000008001460                xorShift
+ .text.playSnare
+                0x0000000008001498       0x6c Project THUMB Debug/main.o
+                0x0000000008001498                playSnare
+ .text.playPackedBeat
+                0x0000000008001504       0xa4 Project THUMB Debug/main.o
+                0x0000000008001504                playPackedBeat
+ .text.main     0x00000000080015a8       0x84 Project THUMB Debug/main.o
+                0x00000000080015a8                main
  .text.UserButtonDown
-                0x0000000008001a0c       0x10 Project THUMB Debug/main.o
-                0x0000000008001a0c                UserButtonDown
+                0x000000000800162c        0x4 Project THUMB Debug/main.o
+                0x000000000800162c                UserButtonDown
  .text.UserButtonUp
-                0x0000000008001a1c       0x10 Project THUMB Debug/main.o
-                0x0000000008001a1c                UserButtonUp
- .text.Delay    0x0000000008001a2c       0x20 Project THUMB Debug/main.o
-                0x0000000008001a2c                Delay
+                0x0000000008001630        0x4 Project THUMB Debug/main.o
+                0x0000000008001630                UserButtonUp
  .text.Decrement_TimingDelay
-                0x0000000008001a4c       0x1c Project THUMB Debug/main.o
-                0x0000000008001a4c                Decrement_TimingDelay
+                0x0000000008001634       0x1c Project THUMB Debug/main.o
+                0x0000000008001634                Decrement_TimingDelay
  .text.Init_Board
-                0x0000000008001a68       0x4c Project THUMB Debug/main.o
-                0x0000000008001a68                Init_Board
+                0x0000000008001650       0x4c Project THUMB Debug/main.o
+                0x0000000008001650                Init_Board
  .text.RTC_Configuration
-                0x0000000008001ab4       0x44 Project THUMB Debug/main.o
-                0x0000000008001ab4                RTC_Configuration
+                0x000000000800169c       0x44 Project THUMB Debug/main.o
+                0x000000000800169c                RTC_Configuration
  .text.Init_GPIOs
-                0x0000000008001af8       0xc4 Project THUMB Debug/main.o
-                0x0000000008001af8                Init_GPIOs
+                0x00000000080016e0       0xc4 Project THUMB Debug/main.o
+                0x00000000080016e0                Init_GPIOs
  .text.NMI_Handler
-                0x0000000008001bbc        0x4 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bbc                NMI_Handler
+                0x00000000080017a4        0x4 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017a4                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008001bc0        0x2 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bc0                HardFault_Handler
+                0x00000000080017a8        0x2 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017a8                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008001bc2        0x2 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bc2                MemManage_Handler
+                0x00000000080017aa        0x2 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017aa                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008001bc4        0x2 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bc4                BusFault_Handler
+                0x00000000080017ac        0x2 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017ac                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008001bc6        0x2 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bc6                UsageFault_Handler
+                0x00000000080017ae        0x2 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017ae                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008001bc8        0x4 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bc8                SVC_Handler
+                0x00000000080017b0        0x4 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017b0                SVC_Handler
  .text.DebugMon_Handler
-                0x0000000008001bcc        0x4 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bcc                DebugMon_Handler
+                0x00000000080017b4        0x4 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017b4                DebugMon_Handler
  .text.PendSV_Handler
-                0x0000000008001bd0        0x4 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bd0                PendSV_Handler
+                0x00000000080017b8        0x4 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017b8                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008001bd4        0xa Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bd4                SysTick_Handler
+                0x00000000080017bc        0xa Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017bc                SysTick_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x0000000008001bde        0xc Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bde                DMA1_Channel1_IRQHandler
+                0x00000000080017c6        0xc Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017c6                DMA1_Channel1_IRQHandler
  .text.RTC_WKUP_IRQHandler
-                0x0000000008001bea       0x24 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001bea                RTC_WKUP_IRQHandler
- *fill*         0x0000000008001c0e        0x2 
+                0x00000000080017d2       0x24 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017d2                RTC_WKUP_IRQHandler
+ *fill*         0x00000000080017f6        0x2 
  .text.EXTI0_IRQHandler
-                0x0000000008001c10       0x28 Project THUMB Debug/stm32l1xx_it.o
-                0x0000000008001c10                EXTI0_IRQHandler
-                0x0000000008001c38                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x0000000000001920                __text_size__ = SIZEOF (.text)
-                0x0000000008001c38                __text_load_end__ = __text_end__
+                0x00000000080017f8       0x28 Project THUMB Debug/stm32l1xx_it.o
+                0x00000000080017f8                EXTI0_IRQHandler
+ .text.libc.__int32_to_float32
+                0x0000000008001820       0x2e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008001820                __aeabi_i2f
+                0x0000000008001820                __int32_to_float32
+                0x0000000008001820                __floatsisf
+                0x0000000008001830                __int32_to_float32_common
+ .text.libc.__int32_to_float64
+                0x000000000800184e       0x2e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800184e                __floatsidf
+                0x000000000800184e                __aeabi_i2d
+                0x000000000800184e                __int32_to_float64
+ .text.libc.__uint32_to_float32
+                0x000000000800187c        0xe /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800187c                __uint32_to_float32
+                0x000000000800187c                __aeabi_ui2f
+                0x000000000800187c                __floatunsisf
+ .text.libc.__float32_to_int32
+                0x000000000800188a       0x3e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800188a                __fixsfsi
+                0x000000000800188a                __float32_to_int32
+                0x000000000800188a                __aeabi_f2iz
+ .text.libc.__float32_to_uint32
+                0x00000000080018c8       0x24 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080018c8                __float32_to_uint32
+                0x00000000080018c8                __aeabi_f2uiz
+                0x00000000080018c8                __fixunssfsi
+ .text.libc.__float64_to_int32
+                0x00000000080018ec       0x4e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080018ec                __fixdfsi
+                0x00000000080018ec                __aeabi_d2iz
+                0x00000000080018ec                __float64_to_int32
+ .text.libc.__float32_to_float64
+                0x000000000800193a       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800193a                __extendsfdf2
+                0x000000000800193a                __float32_to_float64
+                0x000000000800193a                __aeabi_f2d
+ .text.libc.__float64_to_float32
+                0x0000000008001972       0x6e /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008001972                __aeabi_d2f
+                0x0000000008001972                __truncdfsf2
+                0x0000000008001972                __float64_to_float32
+ .text.libc.__float32_add
+                0x00000000080019e0      0x136 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080019e0                __aeabi_frsub
+                0x00000000080019e8                __float32_sub
+                0x00000000080019e8                __subsf3
+                0x00000000080019e8                __aeabi_fsub
+                0x00000000080019ec                __aeabi_fadd
+                0x00000000080019ec                __addsf3
+                0x00000000080019ec                __float32_add
+ .text.libc.__float32_mul
+                0x0000000008001b16       0xd2 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008001b16                __float32_mul
+                0x0000000008001b16                __mulsf3
+                0x0000000008001b16                __aeabi_fmul
+ .text.libc.__float32_div
+                0x0000000008001be8      0x1e0 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008001be8                __divsf3
+                0x0000000008001be8                __aeabi_fdiv
+                0x0000000008001be8                __float32_div
+ .text.libc.__float64_add
+                0x0000000008001dc8      0x294 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008001dc8                __aeabi_drsub
+                0x0000000008001dd0                __float64_sub
+                0x0000000008001dd0                __aeabi_dsub
+                0x0000000008001dd0                __subdf3
+                0x0000000008001dd4                __adddf3
+                0x0000000008001dd4                __float64_add
+                0x0000000008001dd4                __aeabi_dadd
+ .text.libc.__float64_mul
+                0x000000000800205c      0x16c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800205c                __aeabi_dmul
+                0x000000000800205c                __float64_mul
+                0x000000000800205c                __muldf3
+ .text.libc.__float64_div
+                0x00000000080021c8      0x214 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080021c8                __aeabi_ddiv
+                0x00000000080021c8                __divdf3
+                0x00000000080021c8                __float64_div
+ .text.libc.__float64_cmpeq
+                0x00000000080023dc       0x32 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080023dc                __aeabi_dcmpeq
+ .text.libc.__float64_cmple
+                0x000000000800240e       0x3c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800240e                __aeabi_dcmple
+ .text.libc.__float64_cmpge
+                0x000000000800244a       0x3c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800244a                __aeabi_dcmpge
+ .text.libc.__float64_cmplt
+                0x0000000008002486       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008002486                __aeabi_dcmplt
+ .text.libc.__float64_cmpgt
+                0x00000000080024be       0x38 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080024be                __aeabi_dcmpgt
+ .text.libc.__float64_isnan
+                0x00000000080024f6       0x10 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080024f6                __float64_isnan
+ *fill*         0x0000000008002506        0x2 
+ .text.libc.frexp
+                0x0000000008002508       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x0000000008002508                frexp(double, int*)
+                0x0000000008002508                frexp
+ .text.libc.ldexp
+                0x0000000008002550       0x68 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x0000000008002550                ldexp(double, int)
+                0x0000000008002550                ldexp
+ .text.libc.exp
+                0x00000000080025b8      0x1e8 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x00000000080025b8                exp(double)
+                0x00000000080025b8                exp
+ .text.libc.log
+                0x00000000080027a0      0x228 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x00000000080027a0                log
+                0x00000000080027a0                log(double)
+ .text.libc.pow
+                0x00000000080029c8      0x11c /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x00000000080029c8                pow(double, double)
+                0x00000000080029c8                pow
+ .text.libc.fabs
+                0x0000000008002ae4        0x6 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
+                0x0000000008002ae4                fabs
+                0x0000000008002ae4                fabs(double)
+ *fill*         0x0000000008002aea        0x2 
+ .text.libc.__aeabi_errno_addr
+                0x0000000008002aec       0x14 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008002aec                __aeabi_errno_addr
+                0x0000000008002b00                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000000000027e8                __text_size__ = SIZEOF (.text)
+                0x0000000008002b00                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -5919,68 +6011,67 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Project THUMB Debug/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x0000000008001c38                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
+                0x0000000008002b00                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
 
-.dtors          0x0000000008001c38        0x0
-                0x0000000008001c38                __dtors_start__ = .
+.dtors          0x0000000008002b00        0x0
+                0x0000000008002b00                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000008001c38                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x0000000008002b00                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000008001c38                __dtors_load_end__ = __dtors_end__
+                0x0000000008002b00                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x0000000008001c38                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x0000000008002b00                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000008001c38        0x0
-                0x0000000008001c38                __ctors_start__ = .
+.ctors          0x0000000008002b00        0x0
+                0x0000000008002b00                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000008001c38                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x0000000008002b00                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000008001c38                __ctors_load_end__ = __ctors_end__
+                0x0000000008002b00                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x0000000008001c38                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x0000000008002b00                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000008001c38       0x56
-                0x0000000008001c38                __rodata_start__ = .
+.rodata         0x0000000008002b00        0x8
+                0x0000000008002b00                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.CapLetterMap
-                0x0000000008001c38       0x34 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008001c38                CapLetterMap
- .rodata.NumberMap
-                0x0000000008001c6c       0x14 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x0000000008001c6c                NumberMap
- .rodata        0x0000000008001c80        0xe Project THUMB Debug/main.o
-                0x0000000008001c8e                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000000056                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000008001c8e                __rodata_load_end__ = __rodata_end__
+ .rodata.libc.__aeabi_EDOM
+                0x0000000008002b00        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008002b00                __aeabi_EDOM
+ .rodata.libc.__aeabi_ERANGE
+                0x0000000008002b04        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008002b04                __aeabi_ERANGE
+                0x0000000008002b08                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000000000008                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000008002b08                __rodata_load_end__ = __rodata_end__
 
 .rel.dyn        0x0000000008080000        0x0
  .rel.iplt      0x0000000008080000        0x0 Project THUMB Debug/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x0000000008001c90                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x0000000008002b08                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000008001c90        0x0
-                0x0000000008001c90                __ARM.exidx_start__ = .
-                0x0000000008001c90                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x0000000008002b08        0x0
+                0x0000000008002b08                __ARM.exidx_start__ = .
+                0x0000000008002b08                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000008001c90                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x0000000008002b08                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000008001c90                __exidx_end = __ARM.exidx_end__
-                0x0000000008001c90                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x0000000008002b08                __exidx_end = __ARM.exidx_end__
+                0x0000000008002b08                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x0000000008001c90                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x0000000008002b08                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000000        0x0 load address 0x0000000008001c90
+.fast           0x0000000020000000        0x0 load address 0x0000000008002b08
                 0x0000000020000000                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000000                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000008001c90                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x0000000008002b08                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000000        0x0
@@ -5990,9 +6081,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = SIZEOF (.fast_run)
                 0x0000000020000000                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .fast_run is too large to fit in RAM memory segment)
-                0x0000000008001c90                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x0000000008002b08                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000000       0x1c load address 0x0000000008001c90
+.data           0x0000000020000000       0x20 load address 0x0000000008002b08
                 0x0000000020000000                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.PLLMulTable
@@ -6000,110 +6091,118 @@ Linker script and memory map
  *fill*         0x0000000020000009        0x3 
  .data.APBAHBPrescTable
                 0x000000002000000c       0x10 Project THUMB Debug/stm32l1xx_rcc.o
-                0x000000002000001c                __data_end__ = (__data_start__ + SIZEOF (.data))
-                0x000000000000001c                __data_size__ = SIZEOF (.data)
-                0x0000000008001cac                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+ .data.randomSeed
+                0x000000002000001c        0x4 Project THUMB Debug/main.o
+                0x000000002000001c                randomSeed
+                0x0000000020000020                __data_end__ = (__data_start__ + SIZEOF (.data))
+                0x0000000000000020                __data_size__ = SIZEOF (.data)
+                0x0000000008002b28                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Project THUMB Debug/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__data_load_start__ == __data_load_end__) || ((__data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .data is too large to fit in FLASH memory segment)
 
-.data_run       0x0000000020000000       0x1c load address 0x0000000008001c90
+.data_run       0x0000000020000000       0x20 load address 0x0000000008002b08
                 0x0000000020000000                __data_run_start__ = .
-                0x000000002000001c                . = MAX ((__data_run_start__ + SIZEOF (.data)), .)
- *fill*         0x0000000020000000       0x1c 
-                0x000000002000001c                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
-                0x000000000000001c                __data_run_size__ = SIZEOF (.data_run)
-                0x000000002000001c                __data_run_load_end__ = __data_run_end__
+                0x0000000020000020                . = MAX ((__data_run_start__ + SIZEOF (.data)), .)
+ *fill*         0x0000000020000000       0x20 
+                0x0000000020000020                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
+                0x0000000000000020                __data_run_size__ = SIZEOF (.data_run)
+                0x0000000020000020                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .data_run is too large to fit in RAM memory segment)
-                0x000000002000001c                __bss_load_start__ = ALIGN (__data_run_end__, 0x4)
+                0x0000000020000020                __bss_load_start__ = ALIGN (__data_run_end__, 0x4)
 
-.bss            0x000000002000001c       0x18
-                0x000000002000001c                __bss_start__ = .
+.bss            0x0000000020000020       0x1c
+                0x0000000020000020                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss.t_bar     0x000000002000001c        0x2 Project THUMB Debug/stm32l_discovery_lcd.o
-                0x000000002000001c                t_bar
- *fill*         0x000000002000001e        0x2 
  .bss.TimingDelay
                 0x0000000020000020        0x4 Project THUMB Debug/main.o
  .bss.RCC_Clocks
                 0x0000000020000024       0x10 Project THUMB Debug/main.o
                 0x0000000020000024                RCC_Clocks
+ .bss.busyWaitCyclesPerSecond
+                0x0000000020000034        0x4 Project THUMB Debug/main.o
+                0x0000000020000034                busyWaitCyclesPerSecond
+ .bss.millisPerBeat
+                0x0000000020000038        0x4 Project THUMB Debug/main.o
+                0x0000000020000038                millisPerBeat
  *(COMMON)
-                0x0000000020000034                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x0000000000000018                __bss_size__ = SIZEOF (.bss)
-                0x0000000020000034                __bss_load_end__ = __bss_end__
+                0x000000002000003c                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x000000000000001c                __bss_size__ = SIZEOF (.bss)
+                0x000000002000003c                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .bss is too large to fit in RAM memory segment)
-                0x0000000020000034                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
+                0x000000002000003c                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
 
-.tbss           0x0000000020000034        0x0
-                0x0000000020000034                __tbss_start__ = .
+.tbss           0x000000002000003c        0x4
+                0x000000002000003c                __tbss_start__ = .
  *(.tbss .tbss.*)
-                0x0000000020000034                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
-                0x0000000000000000                __tbss_size__ = SIZEOF (.tbss)
-                0x0000000020000034                __tbss_load_end__ = __tbss_end__
+ .tbss.errno_val
+                0x000000002000003c        0x4 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000020000040                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
+                0x0000000000000004                __tbss_size__ = SIZEOF (.tbss)
+                0x0000000020000040                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .tbss is too large to fit in RAM memory segment)
-                0x0000000008001cac                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000008002b28                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x0000000020000034        0x0 load address 0x0000000008001cac
-                0x0000000020000034                __tdata_start__ = .
+.tdata          0x0000000020000040        0x0 load address 0x0000000008002b28
+                0x0000000020000040                __tdata_start__ = .
  *(.tdata .tdata.*)
-                0x0000000020000034                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
+                0x0000000020000040                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000008001cac                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000008001cac                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000001cac                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x0000000008002b28                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000008002b28                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000002b28                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
-.tdata_run      0x0000000020000034        0x0
-                0x0000000020000034                __tdata_run_start__ = .
-                0x0000000020000034                . = MAX ((__tdata_run_start__ + SIZEOF (.tdata)), .)
-                0x0000000020000034                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata_run))
+.tdata_run      0x0000000020000040        0x0
+                0x0000000020000040                __tdata_run_start__ = .
+                0x0000000020000040                . = MAX ((__tdata_run_start__ + SIZEOF (.tdata)), .)
+                0x0000000020000040                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata_run))
                 0x0000000000000000                __tdata_run_size__ = SIZEOF (.tdata_run)
-                0x0000000020000034                __tdata_run_load_end__ = __tdata_run_end__
+                0x0000000020000040                __tdata_run_load_end__ = __tdata_run_end__
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .tdata_run is too large to fit in RAM memory segment)
-                0x0000000020000034                __non_init_load_start__ = ALIGN (__tdata_run_end__, 0x4)
+                0x0000000020000040                __non_init_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.non_init       0x0000000020000034        0x0
-                0x0000000020000034                __non_init_start__ = .
+.non_init       0x0000000020000040        0x0
+                0x0000000020000040                __non_init_start__ = .
  *(.non_init .non_init.*)
-                0x0000000020000034                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
+                0x0000000020000040                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
                 0x0000000000000000                __non_init_size__ = SIZEOF (.non_init)
-                0x0000000020000034                __non_init_load_end__ = __non_init_end__
+                0x0000000020000040                __non_init_load_end__ = __non_init_end__
                 0x0000000000000001                . = ASSERT (((__non_init_start__ == __non_init_end__) || ((__non_init_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .non_init is too large to fit in RAM memory segment)
-                0x0000000020000034                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
+                0x0000000020000040                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
 
-.heap           0x0000000020000034       0x80
-                0x0000000020000034                __heap_start__ = .
+.heap           0x0000000020000040       0x80
+                0x0000000020000040                __heap_start__ = .
  *(.heap .heap.*)
-                0x00000000200000b4                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
- *fill*         0x0000000020000034       0x80 
-                0x00000000200000b4                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x00000000200000c0                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
+ *fill*         0x0000000020000040       0x80 
+                0x00000000200000c0                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
                 0x0000000000000080                __heap_size__ = SIZEOF (.heap)
-                0x00000000200000b4                __heap_load_end__ = __heap_end__
+                0x00000000200000c0                __heap_load_end__ = __heap_end__
                 0x0000000000000001                . = ASSERT (((__heap_start__ == __heap_end__) || ((__heap_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .heap is too large to fit in RAM memory segment)
-                0x00000000200000b8                __stack_load_start__ = ALIGN (__heap_end__, 0x8)
+                0x00000000200000c0                __stack_load_start__ = ALIGN (__heap_end__, 0x8)
 
-.stack          0x00000000200000b8      0x100
-                0x00000000200000b8                __stack_start__ = .
+.stack          0x00000000200000c0      0x100
+                0x00000000200000c0                __stack_start__ = .
  *(.stack .stack.*)
-                0x00000000200001b8                . = ALIGN (MAX ((__stack_start__ + __STACKSIZE__), .), 0x8)
- *fill*         0x00000000200000b8      0x100 
-                0x00000000200001b8                __stack_end__ = (__stack_start__ + SIZEOF (.stack))
+                0x00000000200001c0                . = ALIGN (MAX ((__stack_start__ + __STACKSIZE__), .), 0x8)
+ *fill*         0x00000000200000c0      0x100 
+                0x00000000200001c0                __stack_end__ = (__stack_start__ + SIZEOF (.stack))
                 0x0000000000000100                __stack_size__ = SIZEOF (.stack)
-                0x00000000200001b8                __stack_load_end__ = __stack_end__
+                0x00000000200001c0                __stack_load_end__ = __stack_end__
                 0x0000000000000001                . = ASSERT (((__stack_start__ == __stack_end__) || ((__stack_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .stack is too large to fit in RAM memory segment)
-                0x00000000200001b8                __stack_process_load_start__ = ALIGN (__stack_end__, 0x8)
+                0x00000000200001c0                __stack_process_load_start__ = ALIGN (__stack_end__, 0x8)
 
-.stack_process  0x00000000200001b8        0x0
-                0x00000000200001b8                __stack_process_start__ = .
+.stack_process  0x00000000200001c0        0x0
+                0x00000000200001c0                __stack_process_start__ = .
  *(.stack_process .stack_process.*)
-                0x00000000200001b8                . = ALIGN (MAX ((__stack_process_start__ + __STACKSIZE_PROCESS__), .), 0x8)
-                0x00000000200001b8                __stack_process_end__ = (__stack_process_start__ + SIZEOF (.stack_process))
+                0x00000000200001c0                . = ALIGN (MAX ((__stack_process_start__ + __STACKSIZE_PROCESS__), .), 0x8)
+                0x00000000200001c0                __stack_process_end__ = (__stack_process_start__ + SIZEOF (.stack_process))
                 0x0000000000000000                __stack_process_size__ = SIZEOF (.stack_process)
-                0x00000000200001b8                __stack_process_load_end__ = __stack_process_end__
-                0x00000000200001b8                __RAM_segment_used_end__ = (ALIGN (__stack_end__, 0x8) + SIZEOF (.stack_process))
-                0x00000000000001b8                __RAM_segment_used_size__ = (__RAM_segment_used_end__ - __RAM_segment_start__)
+                0x00000000200001c0                __stack_process_load_end__ = __stack_process_end__
+                0x00000000200001c0                __RAM_segment_used_end__ = (ALIGN (__stack_end__, 0x8) + SIZEOF (.stack_process))
+                0x00000000000001c0                __RAM_segment_used_size__ = (__RAM_segment_used_end__ - __RAM_segment_start__)
                 0x0000000000000001                . = ASSERT (((__stack_process_start__ == __stack_process_end__) || ((__stack_process_end__ - __RAM_segment_start__) <= __RAM_segment_size__)), error: .stack_process is too large to fit in RAM memory segment)
 START GROUP
 LOAD Project THUMB Debug/thumb_crt0.o
@@ -6182,6 +6281,14 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
                 0x0000000000000273       0x33 Project THUMB Debug/main.o
  .ARM.attributes
                 0x00000000000002a6       0x33 Project THUMB Debug/stm32l1xx_it.o
+ .ARM.attributes
+                0x00000000000002d9       0x1b /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+ .ARM.attributes
+                0x00000000000002f4       0x2d /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+ .ARM.attributes
+                0x0000000000000321       0x1b /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
+ .ARM.attributes
+                0x000000000000033c       0x2d /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
 
 .comment        0x0000000000000000       0x47
  .comment       0x0000000000000000       0x47 Project THUMB Debug/system_stm32l1xx.o
@@ -6198,8 +6305,10 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .comment       0x0000000000000047       0x48 Project THUMB Debug/stm32l_discovery_lcd.o
  .comment       0x0000000000000047       0x48 Project THUMB Debug/main.o
  .comment       0x0000000000000047       0x48 Project THUMB Debug/stm32l1xx_it.o
+ .comment       0x0000000000000047       0x48 /usr/share/crossworks_for_arm_4.6/lib/libm_v7m_t_le_eabi.a(libm2.o)
+ .comment       0x0000000000000047       0x48 /usr/share/crossworks_for_arm_4.6/lib/libc_v7m_t_le_eabi.a(libc2.o)
 
-.debug_line     0x0000000000000000     0x6400
+.debug_line     0x0000000000000000     0x662c
  .debug_line    0x0000000000000000      0x1d0 Project THUMB Debug/thumb_crt0.o
  .debug_line    0x00000000000001d0       0xff Project THUMB Debug/STM32_Startup.o
  .debug_line    0x00000000000002cf      0x512 Project THUMB Debug/system_stm32l1xx.o
@@ -6213,10 +6322,10 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_line    0x000000000000348f     0x125a Project THUMB Debug/stm32l1xx_rtc.o
  .debug_line    0x00000000000046e9      0x71f Project THUMB Debug/stm32l1xx_syscfg.o
  .debug_line    0x0000000000004e08      0xa6f Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_line    0x0000000000005877      0x657 Project THUMB Debug/main.o
- .debug_line    0x0000000000005ece      0x532 Project THUMB Debug/stm32l1xx_it.o
+ .debug_line    0x0000000000005877      0x883 Project THUMB Debug/main.o
+ .debug_line    0x00000000000060fa      0x532 Project THUMB Debug/stm32l1xx_it.o
 
-.debug_info     0x0000000000000000     0x6a58
+.debug_info     0x0000000000000000     0x6d20
  .debug_info    0x0000000000000000       0x22 Project THUMB Debug/thumb_crt0.o
  .debug_info    0x0000000000000022       0x26 Project THUMB Debug/STM32_Startup.o
  .debug_info    0x0000000000000048      0x580 Project THUMB Debug/system_stm32l1xx.o
@@ -6230,10 +6339,10 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_info    0x0000000000002e8c     0x121d Project THUMB Debug/stm32l1xx_rtc.o
  .debug_info    0x00000000000040a9      0x444 Project THUMB Debug/stm32l1xx_syscfg.o
  .debug_info    0x00000000000044ed      0xcd6 Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_info    0x00000000000051c3     0x103e Project THUMB Debug/main.o
- .debug_info    0x0000000000006201      0x857 Project THUMB Debug/stm32l1xx_it.o
+ .debug_info    0x00000000000051c3     0x1306 Project THUMB Debug/main.o
+ .debug_info    0x00000000000064c9      0x857 Project THUMB Debug/stm32l1xx_it.o
 
-.debug_abbrev   0x0000000000000000     0x1974
+.debug_abbrev   0x0000000000000000     0x1a0b
  .debug_abbrev  0x0000000000000000       0x12 Project THUMB Debug/thumb_crt0.o
  .debug_abbrev  0x0000000000000012       0x14 Project THUMB Debug/STM32_Startup.o
  .debug_abbrev  0x0000000000000026      0x18f Project THUMB Debug/system_stm32l1xx.o
@@ -6247,10 +6356,10 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_abbrev  0x0000000000000ee0      0x20f Project THUMB Debug/stm32l1xx_rtc.o
  .debug_abbrev  0x00000000000010ef      0x1b7 Project THUMB Debug/stm32l1xx_syscfg.o
  .debug_abbrev  0x00000000000012a6      0x270 Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_abbrev  0x0000000000001516      0x2c2 Project THUMB Debug/main.o
- .debug_abbrev  0x00000000000017d8      0x19c Project THUMB Debug/stm32l1xx_it.o
+ .debug_abbrev  0x0000000000001516      0x359 Project THUMB Debug/main.o
+ .debug_abbrev  0x000000000000186f      0x19c Project THUMB Debug/stm32l1xx_it.o
 
-.debug_aranges  0x0000000000000000      0x880
+.debug_aranges  0x0000000000000000      0x8d0
  .debug_aranges
                 0x0000000000000000       0x80 Project THUMB Debug/thumb_crt0.o
  .debug_aranges
@@ -6278,11 +6387,11 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000728       0x68 Project THUMB Debug/stm32l_discovery_lcd.o
  .debug_aranges
-                0x0000000000000790       0x78 Project THUMB Debug/main.o
+                0x0000000000000790       0xc8 Project THUMB Debug/main.o
  .debug_aranges
-                0x0000000000000808       0x78 Project THUMB Debug/stm32l1xx_it.o
+                0x0000000000000858       0x78 Project THUMB Debug/stm32l1xx_it.o
 
-.debug_str      0x0000000000000000    0x51417
+.debug_str      0x0000000000000000    0x51c18
  .debug_str     0x0000000000000000       0x74 Project THUMB Debug/thumb_crt0.o
  .debug_str     0x0000000000000074       0x63 Project THUMB Debug/STM32_Startup.o
                                          0xa1 (size before relaxing)
@@ -6308,12 +6417,12 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
                                       0x4d2b2 (size before relaxing)
  .debug_str     0x0000000000050247      0xce3 Project THUMB Debug/stm32l_discovery_lcd.o
                                       0x4df96 (size before relaxing)
- .debug_str     0x0000000000050f2a      0x3ca Project THUMB Debug/main.o
-                                      0x4e3b9 (size before relaxing)
- .debug_str     0x00000000000512f4      0x123 Project THUMB Debug/stm32l1xx_it.o
+ .debug_str     0x0000000000050f2a      0xbcb Project THUMB Debug/main.o
+                                      0x4ebba (size before relaxing)
+ .debug_str     0x0000000000051af5      0x123 Project THUMB Debug/stm32l1xx_it.o
                                       0x4dd23 (size before relaxing)
 
-.debug_ranges   0x0000000000000000      0x788
+.debug_ranges   0x0000000000000000      0x7d8
  .debug_ranges  0x0000000000000000       0x78 Project THUMB Debug/thumb_crt0.o
  .debug_ranges  0x0000000000000078       0x20 Project THUMB Debug/system_stm32l1xx.o
  .debug_ranges  0x0000000000000098       0x30 Project THUMB Debug/misc.o
@@ -6326,10 +6435,10 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_ranges  0x0000000000000430      0x1c0 Project THUMB Debug/stm32l1xx_rtc.o
  .debug_ranges  0x00000000000005f0       0x70 Project THUMB Debug/stm32l1xx_syscfg.o
  .debug_ranges  0x0000000000000660       0x58 Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_ranges  0x00000000000006b8       0x68 Project THUMB Debug/main.o
- .debug_ranges  0x0000000000000720       0x68 Project THUMB Debug/stm32l1xx_it.o
+ .debug_ranges  0x00000000000006b8       0xb8 Project THUMB Debug/main.o
+ .debug_ranges  0x0000000000000770       0x68 Project THUMB Debug/stm32l1xx_it.o
 
-.debug_frame    0x0000000000000000     0x1aac
+.debug_frame    0x0000000000000000     0x1c04
  .debug_frame   0x0000000000000000       0x6c Project THUMB Debug/system_stm32l1xx.o
  .debug_frame   0x000000000000006c       0xb0 Project THUMB Debug/misc.o
  .debug_frame   0x000000000000011c      0x170 Project THUMB Debug/stm32l1xx_dma.o
@@ -6341,11 +6450,11 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_frame   0x0000000000000dfc      0x724 Project THUMB Debug/stm32l1xx_rtc.o
  .debug_frame   0x0000000000001520      0x18c Project THUMB Debug/stm32l1xx_syscfg.o
  .debug_frame   0x00000000000016ac      0x180 Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_frame   0x000000000000182c      0x180 Project THUMB Debug/main.o
- .debug_frame   0x00000000000019ac      0x100 Project THUMB Debug/stm32l1xx_it.o
+ .debug_frame   0x000000000000182c      0x2d8 Project THUMB Debug/main.o
+ .debug_frame   0x0000000000001b04      0x100 Project THUMB Debug/stm32l1xx_it.o
 
 .debug_pubnames
-                0x0000000000000000     0x1cf3
+                0x0000000000000000     0x1de9
  .debug_pubnames
                 0x0000000000000000       0x93 Project THUMB Debug/system_stm32l1xx.o
  .debug_pubnames
@@ -6369,12 +6478,12 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_pubnames
                 0x00000000000013ba      0x19d Project THUMB Debug/stm32l_discovery_lcd.o
  .debug_pubnames
-                0x0000000000001557      0x660 Project THUMB Debug/main.o
+                0x0000000000001557      0x756 Project THUMB Debug/main.o
  .debug_pubnames
-                0x0000000000001bb7      0x13c Project THUMB Debug/stm32l1xx_it.o
+                0x0000000000001cad      0x13c Project THUMB Debug/stm32l1xx_it.o
 
 .debug_pubtypes
-                0x0000000000000000     0x12af
+                0x0000000000000000     0x12c4
  .debug_pubtypes
                 0x0000000000000000      0x110 Project THUMB Debug/system_stm32l1xx.o
  .debug_pubtypes
@@ -6398,11 +6507,11 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_pubtypes
                 0x0000000000000bce      0x250 Project THUMB Debug/stm32l_discovery_lcd.o
  .debug_pubtypes
-                0x0000000000000e1e      0x2e6 Project THUMB Debug/main.o
+                0x0000000000000e1e      0x2fb Project THUMB Debug/main.o
  .debug_pubtypes
-                0x0000000000001104      0x1ab Project THUMB Debug/stm32l1xx_it.o
+                0x0000000000001119      0x1ab Project THUMB Debug/stm32l1xx_it.o
 
-.debug_macro    0x0000000000000000     0xeb98
+.debug_macro    0x0000000000000000     0xecae
  .debug_macro   0x0000000000000000      0x159 Project THUMB Debug/system_stm32l1xx.o
  .debug_macro   0x0000000000000159      0xade Project THUMB Debug/system_stm32l1xx.o
  .debug_macro   0x0000000000000c37       0x6f Project THUMB Debug/system_stm32l1xx.o
@@ -6457,5 +6566,6 @@ OUTPUT(Project THUMB Debug/Project.elf elf32-littlearm)
  .debug_macro   0x000000000000e6cb       0xa0 Project THUMB Debug/stm32l_discovery_lcd.o
  .debug_macro   0x000000000000e76b       0x89 Project THUMB Debug/stm32l_discovery_lcd.o
  .debug_macro   0x000000000000e7f4       0x78 Project THUMB Debug/stm32l_discovery_lcd.o
- .debug_macro   0x000000000000e86c      0x191 Project THUMB Debug/main.o
- .debug_macro   0x000000000000e9fd      0x19b Project THUMB Debug/stm32l1xx_it.o
+ .debug_macro   0x000000000000e86c      0x19a Project THUMB Debug/main.o
+ .debug_macro   0x000000000000ea06      0x10d Project THUMB Debug/main.o
+ .debug_macro   0x000000000000eb13      0x19b Project THUMB Debug/stm32l1xx_it.o
