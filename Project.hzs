@@ -64,9 +64,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" useBinaryEdit="0" left="0" path="src/main.c" selected="1" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="137" useTextEdit="1" useBinaryEdit="0" left="0" path="src/stm32l1xx_it.c" selected="0" top="122" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="274" useTextEdit="1" useBinaryEdit="0" left="0" path="Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.c" selected="0" top="262" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="223" useTextEdit="1" useBinaryEdit="0" left="0" path="src/main.c" selected="1" top="164" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="188" useTextEdit="1" useBinaryEdit="0" left="0" path="src/stm32l1xx_it.c" selected="0" top="161" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="31" useTextEdit="1" useBinaryEdit="0" left="0" path="Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.c" selected="0" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="111" useTextEdit="1" useBinaryEdit="0" left="0" path="Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.h" selected="0" top="78" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="Project" fileDialogDefaultFilter="*.c" autoConnectTarget="ST-LINK/V2" buildConfiguration="THUMB Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/chrisfaulhaber/Documents/CrossWorks Projects/RealDriver/Libraries/STMTouch_Driver/src" debugSearchPath="" autoConnectCapabilities="264063"/>
+ <ARMCrossStudioWindow activeProject="Project" fileDialogDefaultFilter="*.c" autoConnectTarget="ST-LINK/V2" buildConfiguration="THUMB Debug" sessionSettings="" debugSearchFileMap="/usr/share/crossworks_for_arm_4.6/source/thumb_crt0.s&#xa;C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.6/source/thumb_crt0.s" fileDialogInitialDirectory="C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 4.6/source" debugSearchPath="" autoConnectCapabilities="264063"/>
 </session>

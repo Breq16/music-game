@@ -1,13 +1,13 @@
 Project\ THUMB\ Debug/stm32l1xx_it.o: \
- /home/breq/Nextcloud/Code/cos250_cross/The_Game/src/stm32l1xx_it.c \
+ C:\Users\breq\Nextcloud\Code\cos250_cross\The_Game\src\stm32l1xx_it.c \
  inc/stm32l1xx_it.h \
  Drivers/Libaries/CMSIS/Device/ST/STM32L1xx/Include/stm32l1xx.h \
- /home/breq/.rowley_associates_limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/core_cm3.h \
- /usr/share/crossworks_for_arm_4.6/include/stdint.h \
- /home/breq/.rowley_associates_limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_version.h \
- /home/breq/.rowley_associates_limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
- /home/breq/.rowley_associates_limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
- /home/breq/.rowley_associates_limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/mpu_armv7.h \
+ C:/Users/breq/AppData/Local/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/core_cm3.h \
+ C:/Program\ Files/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM\ 4.6/include/stdint.h \
+ C:/Users/breq/AppData/Local/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_version.h \
+ C:/Users/breq/AppData/Local/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
+ C:/Users/breq/AppData/Local/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
+ C:/Users/breq/AppData/Local/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM/v4/packages/CMSIS_5/CMSIS/Core/Include/mpu_armv7.h \
  Drivers/Libaries/CMSIS/Device/ST/STM32L1xx/Include/system_stm32l1xx.h \
  inc/stm32l1xx_conf.h \
  Drivers/Libaries/STM32L1xx_StdPeriph_Driver/inc/stm32l1xx_adc.h \
@@ -34,5 +34,5 @@ Project\ THUMB\ Debug/stm32l1xx_it.o: \
  Drivers/Utilities/STM32L-DISCOVERY/discover_board.h \
  Drivers/Utilities/STM32L-DISCOVERY/stm32l_discovery_lcd.h \
  Drivers/Utilities/STM32L-DISCOVERY/discover_board.h \
- /usr/share/crossworks_for_arm_4.6/include/stdio.h \
- /usr/share/crossworks_for_arm_4.6/include/__crossworks.h
+ C:/Program\ Files/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM\ 4.6/include/stdio.h \
+ C:/Program\ Files/Rowley\ Associates\ Limited/CrossWorks\ for\ ARM\ 4.6/include/__crossworks.h

@@ -86,16 +86,17 @@ const uint16_t NumberMap[10]=
         /* 0      1      2      3      4      5      6      7      8      9  */
  //       0x5F00,0x4200,0xF500,0x6700,0xEa00,0xAF00,0xBF00,0x04600,0xFF00,0xEF00
 
+        // Note indicators, left-to-right
+        //0x0800, 0x0004, 0x4000,
+
+        // All possible combinations of them:
+        0x0000, 0x0800, 0x0004, 0x0804, 0x4000, 0x4800, 0x4004, 0x4804,
+        
         // Track position indicator, inactive
         0x0181,
+        
         // Track position indicator, active
-        0x0191,
-        // Note indicators, left-to-right
-        0x0800, 0x0004, 0x4000,
-        // All at once
-        0x4804,
-        // Unused
-        0x0000, 0x0000, 0x0000, 0x0000
+        0x0191
     };
 
 static void LCD_Conv_Char_Seg(uint8_t* c,bool point,bool column,uint8_t* digit);
@@ -339,13 +340,19 @@ static void LCD_Conv_Char_Seg(uint8_t* c,bool point,bool column, uint8_t* digit)
   /* Set the digital point can be displayed if the point is on */
   if (point)
   {
-    ch |= 0x0002;
+    //ch |= 0x0002;
+
+    // Override the "point" value to show the track position indicator (inactive)
+    ch |= NumberMap[8];
   }
 
   /* Set the "COL" segment in the character that can be displayed if the column is on */
   if (column)
   {
-    ch |= 0x0020;
+    //ch |= 0x0020;
+
+    // Override the "column" value to show the track position indicator (active)
+    ch |= NumberMap[9];
   }		
 
   for (i = 12,j=0 ;j<4; i-=4,j++)
